@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,9 +24,23 @@
             padding: 20px;
         }
 
+        .titulo-video {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
         .botao-central {
-            background-color: #4DA6FF; /* Azul um pouco claro */
-            color: #FFFFFF; /* Texto branco */
+            background-color: #4DA6FF;
+            color: #FFFFFF;
             padding: 20px 40px;
             font-size: 18px;
             font-weight: bold;
@@ -40,7 +54,7 @@
         }
 
         .botao-central:hover {
-            background-color: #3399FF; /* Azul levemente mais escuro no hover */
+            background-color: #3399FF;
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
@@ -54,9 +68,18 @@
 
 <body>
     <div class="container">
+
+        <div class="titulo-video">Assista antes de comprar</div>
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
         <a href="https://www.elix-labs.click" class="botao-central">
             IR PARA ELIX LABS
         </a>
+
     </div>
 </body>
 </html>
