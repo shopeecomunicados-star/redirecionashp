@@ -25,23 +25,24 @@
         }
 
         .titulo-video {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #000;
         }
 
         video {
-            width: 100%;
+            width: 85%;              /* diminuído */
+            max-height: 250px;       /* limita altura */
             border-radius: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 15px;     /* menos espaço abaixo */
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
         .botao-central {
             background-color: #4DA6FF;
             color: #FFFFFF;
-            padding: 20px 40px;
+            padding: 18px 35px;
             font-size: 18px;
             font-weight: bold;
             border: none;
@@ -71,7 +72,7 @@
 
         <div class="titulo-video">Assista antes de comprar</div>
 
-        <video controls>
+        <video controls poster="thumb.jpg">
             <source src="video.mp4" type="video/mp4">
             Seu navegador não suporta vídeo.
         </video>
